@@ -5954,6 +5954,11 @@ td.visible-print {
     display: none !important;
   }
 }
+#bilog-jumbotron {
+  background-color: lightcyan;
+  height: 200px;
+  margin-top: 20px;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;

@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+(function() {
+  $(function() {
+    return Helpers.loadContent("/templates/home.html");
+  });
+
+}).call(this);
