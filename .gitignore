@@ -1,3 +1,7 @@
+# important
+.ftppass
+sftpCache.json
+
 # Numerous always-ignore extensions
 *.diff
 *.err

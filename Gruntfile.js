@@ -154,8 +154,6 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/styles/{,*/}*.css',
             '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
             '<%= yeoman.dist %>/fonts/{,*/}*.*',
-            '<%= yeoman.dist %>/templates/{,*/}*.html'
-
           ]
         }
       }
@@ -268,15 +266,33 @@ module.exports = function (grunt) {
           }
     },
 
+    'sftp-deploy': {
+          build: {
+              auth: {
+                  host: 'klarblick.org',
+                  port: 22,
+                  authKey: 'key1'
+              },
+              cache: 'sftpCache.json',
+              src: 'dist',
+              dest: '/home/daniel/webspace/bildog',
+              exclusions: [],
+              serverSep: '/',
+              concurrency: 4,
+              progress: true
+          }
+    },
+
     concurrent: {
-    dist: [
-        'coffee',
-        'less',
-        'imagemin',
-        'svgmin',
-        'htmlmin'
-      ]
+        dist: [
+            'coffee',
+            'less',
+            'imagemin',
+            'svgmin',
+            'htmlmin'
+         ]
     }
+
   });
 
   grunt.registerTask('serve', function (target) {
@@ -319,6 +335,11 @@ module.exports = function (grunt) {
     'copy',
     'rev',
     'usemin'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'build',
+    'sftp-deploy'
   ]);
 
   grunt.registerTask('default', [
