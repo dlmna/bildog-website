@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/*.html',
-          '<%= yeoman.app %>/templates/*.html',
+          '<%= yeoman.app %>/templates/{,*/}*.html',
           '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -153,7 +153,9 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/scripts/{,*/}*.js',
             '<%= yeoman.dist %>/styles/{,*/}*.css',
             '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-            '<%= yeoman.dist %>/fonts/{,*/}*.*'
+            '<%= yeoman.dist %>/fonts/{,*/}*.*',
+            '<%= yeoman.dist %>/templates/{,*/}*.html'
+
           ]
         }
       }
@@ -232,7 +234,8 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'images/{,*/}*.{webp,gif}'
+            'images/{,*/}*.{webp,gif}',
+            'templates/{,*/}*.html'
           ]
         }]
       },
@@ -247,8 +250,26 @@ module.exports = function (grunt) {
         }]
       }
     },
+
+    scp: {
+          options: {
+              host: 'foo',
+              username: 'bar',
+              password: 'foo'
+          },
+          your_target: {
+              files: [{
+                  cwd: 'dist',
+                  src: '**/*',
+                  filter: 'isFile',
+                  // path on the server
+                  dest: '/home/foo/bar/bildog'
+              }]
+          }
+    },
+
     concurrent: {
-      dist: [
+    dist: [
         'coffee',
         'less',
         'imagemin',
