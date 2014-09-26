@@ -1,6 +1,6 @@
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed turpis a mi iaculis semper sit amet non augue. Cras pharetra justo sit amet mollis eleifend. Suspendisse congue condimentum sapien eu dapibus. Suspendisse volutpat velit id sem luctus ultrices. Proin varius orci eget mauris aliquet, sit amet tristique tellus suscipit. Suspendisse mattis massa eu purus mattis vestibulum. Morbi sodales quam sem, vel posuere dolor interdum non.
 
-[contact@bildog.de](contact@bildog.de "Kontakt")
+[contact@bildog.de](mailto:contact@bildog.de "Kontakt")
 
 [anderes Projekt](http://www.linkzuanderemprojekt.de "anderes Projekt")
 
