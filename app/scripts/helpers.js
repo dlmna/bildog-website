@@ -1,8 +1,7 @@
 (function() {
   window.Helpers = {};
 
-  Helpers.loadContent = function(name) {
-    console.log(name);
+  Helpers.loadTemplate = function(name) {
     return $("#content").load(name);
   };
 

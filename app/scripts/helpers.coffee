@@ -1,5 +1,4 @@
 window.Helpers = {}
 
-Helpers.loadContent = (name) ->
-  console.log name
+Helpers.loadTemplate = (name) ->
   $("#content").load name
