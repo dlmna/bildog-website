@@ -235,7 +235,9 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             'images/{,*/}*.{webp,gif}',
-            'templates/{,*/}*.html'
+            'templates/{,*/}*.html',
+            'content/{,*/}*.txt',
+            'scripts/markdown-browser-0.6.0-beta1/markdown.min.js'
           ]
         }]
       },
