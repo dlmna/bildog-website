@@ -5954,10 +5954,45 @@ td.visible-print {
     display: none !important;
   }
 }
-#bilog-jumbotron {
-  background-color: lightcyan;
-  height: 200px;
-  margin-top: 20px;
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #f08132;
+  border-radius: 20px;
+  padding: 4px 20px 4px 20px;
+  margin-right: 5px;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
+  border: 1px solid #f08132;
+  border-radius: 20px;
+  padding: 4px 20px 4px 20px;
+  color: #f08132;
+  margin-right: 5px;
+}
+#bildog-jumbotron {
+  background-color: transparent;
+  background-image: url(/images/jumbos/home1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+body {
+  background-image: url(/images/background.jpg);
+}
+.header {
+  height: 100px;
+  padding: 0 20px 0 20px;
+}
+#bildog-footer {
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-color: #f08132;
+}
+#footer-container {
+  background-color: transparent;
 }
 .browsehappy {
   margin: 0.2em 0;
@@ -5966,12 +6001,13 @@ td.visible-print {
   padding: 0.2em 0;
 }
 .jumbotron {
-  margin: 50px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 .container {
   width: 960px;
-}
-.navbar-inverse {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 0px 10px 0px rgba(50, 50, 50, 0.75);
 }
 /*# sourceMappingURL=/styles/main.css.map */
