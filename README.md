@@ -1,4 +1,6 @@
 bildog-website
 ==============
 
-Inhalte hier editieren: app/content/
+Inhalte hier editieren: 
+
+/app/content/
