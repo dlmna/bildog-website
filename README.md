@@ -1,3 +1,6 @@
 bildog-website
 ==============
-foo
+
+Inhalte hier editieren: 
+
+/app/content/
