@@ -8,7 +8,10 @@
   };
 
   UI.loadContent = function(element, filePath) {
-    return $(element).parent().load(filePath);
+    return $.get(filePath, function(data) {
+      data = window.markdown.toHTML(data);
+      return $(element).html(data);
+    });
   };
 
   $(function() {

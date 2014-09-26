@@ -1,3 +1,23 @@
+# bildog
+
 bildog fordert das ein, was längst in der Gesellschaft überfällig ist ...
 
-abcd
+ * abcd
+ * foobar
+
+## sub title
+
+> blockquote
+> ...
+> more quote
+
+    hello world
+
+horizontal line
+
+***
+
+### less
+
+1. item 1
+2. item 2

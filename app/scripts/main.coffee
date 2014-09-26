@@ -6,7 +6,9 @@ UI.openTab = (element, template) ->
   Helpers.loadTemplate template
 
 UI.loadContent = (element, filePath) ->
-  $(element).parent().load(filePath)
+  $.get filePath, (data) ->
+    data = window.markdown.toHTML data
+    $(element).html data
 
 $ ->
   Helpers.loadTemplate "/templates/home.html"
