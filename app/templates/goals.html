@@ -1,14 +1,31 @@
-<div id="other-jumbotron" class="jumbotron">
+<div id="ziele-jumbotron" class="jumbotron">
+    <img class="jumbotron-icon" src="/images/bldg_ziele.png"/>
 </div>
 
 <div class="container">
-    <div class="row content">
-        <div class="col-md-12">
-            <div id="ziele-txt" class="text-content">
-                <script type="text/javascript">
-                    UI.loadContent('#ziele-txt', '/content/ziele.txt');
-                </script>
+    <div class="content">
+        <div class="row">
+            <div id="oben" class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <br/>
+        </div>
+        <div class="row">
+            <div id="links" class="col-md-4"></div>
+            <div id="mitte" class="col-md-4"></div>
+            <div id="rechts" class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <br/>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="unten"></div>
             </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    UI.loadContent('/content/bildog/ziele.txt');
+</script>

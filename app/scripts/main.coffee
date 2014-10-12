@@ -1,15 +1,16 @@
 window.UI = {}
 
-
 UI.openTab = (element, template) ->
   $(".main-menu-item.active").removeClass "active"
   $(element).parents(".main-menu-item").addClass "active"
   Helpers.loadTemplate template
 
-UI.loadContent = (element, filePath) ->
+UI.loadContent = (filePath) ->
   $.get filePath, (data) ->
-    data = window.markdown.toHTML data
-    $(element).html data
+    sections = Helpers.loadSections data
+    for section, text of sections
+      data = window.markdown.toHTML text
+      $("#" + section).html data
 
 $ ->
   Helpers.loadTemplate "/templates/home.html"

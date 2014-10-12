@@ -5962,11 +5962,9 @@ td.visible-print {
   margin-right: 5px;
 }
 .nav-pills > li.active > a,
-.nav-pills > li > a:focus {
-  background-color: #f08132 !important;
-}
+.nav-pills > li > a:focus,
 .nav-pills > li > a:hover {
-  background-color: #f08132;
+  background-color: #f08132 !important;
   color: white;
 }
 .sidebar-nav {
@@ -6021,7 +6019,6 @@ td.visible-print {
   background-image: url(/images/jumbos/home1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
 }
 body {
   background-image: url(/images/background.jpg);
@@ -6049,6 +6046,7 @@ body {
 .jumbotron {
   margin: 0 auto 0 auto;
   height: 300px;
+  padding: 0;
 }
 .jumbotron-icon {
   display: block;

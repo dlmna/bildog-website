@@ -7,10 +7,17 @@
     return Helpers.loadTemplate(template);
   };
 
-  UI.loadContent = function(element, filePath) {
+  UI.loadContent = function(filePath) {
     return $.get(filePath, function(data) {
-      data = window.markdown.toHTML(data);
-      return $(element).html(data);
+      var section, sections, text, _results;
+      sections = Helpers.loadSections(data);
+      _results = [];
+      for (section in sections) {
+        text = sections[section];
+        data = window.markdown.toHTML(text);
+        _results.push($("#" + section).html(data));
+      }
+      return _results;
     });
   };
 

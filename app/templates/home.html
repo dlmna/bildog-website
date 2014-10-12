@@ -3,27 +3,21 @@
 </div>
 
 <div class="container">
-
     <div class="content">
         <div class="row">
-            <div id="bildog-top-txt" class="col-md-12">
-                <script type="text/javascript">
-                    UI.loadContent('#bildog-top-txt', '/content/bildog/1-bildog-oben.txt');
-                </script>
-            </div>
+            <div id="oben" class="col-md-12"></div>
         </div>
         <div class="row">
-            <div id="bildog-left-txt" class="col-md-5">
-                <script type="text/javascript">
-                    UI.loadContent('#bildog-left-txt', '/content/bildog/2-bildog-links.txt');
-                </script>
-            </div>
-            <div id="bildog-right-txt" class="col-md-5">
-                <script type="text/javascript">
-                    UI.loadContent('#bildog-right-txt', '/content/bildog/3-bildog-rechts.txt');
-                </script>
-            </div>
+            <br/>
+        </div>
+        <div class="row">
+            <div id="links" class="col-md-5"></div>
+            <div id="mitte" class="col-md-5"></div>
+            <div id="rechts" class="col-md-2"></div>
         </div>
     </div>
-
 </div>
+
+<script type="text/javascript">
+    UI.loadContent('/content/bildog/bildog.txt');
+</script>
