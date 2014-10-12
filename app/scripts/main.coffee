@@ -1,8 +1,9 @@
 window.UI = {}
 
+
 UI.openTab = (element, template) ->
-  $(".nav li.active").removeClass "active"
-  $(element).parent().addClass "active"
+  $(".main-menu-item.active").removeClass "active"
+  $(element).parents(".main-menu-item").addClass "active"
   Helpers.loadTemplate template
 
 UI.loadContent = (element, filePath) ->

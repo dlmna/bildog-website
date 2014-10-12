@@ -2,8 +2,8 @@
   window.UI = {};
 
   UI.openTab = function(element, template) {
-    $(".nav li.active").removeClass("active");
-    $(element).parent().addClass("active");
+    $(".main-menu-item.active").removeClass("active");
+    $(element).parents(".main-menu-item").addClass("active");
     return Helpers.loadTemplate(template);
   };
 

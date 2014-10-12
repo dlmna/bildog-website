@@ -22,10 +22,32 @@
 <div class="container">
     <div class="header">
         <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#" onclick="UI.openTab(this, '/templates/home.html')">bildog</a></li>
-            <li><a href="#" onclick="UI.openTab(this, '/templates/goals.html')">ziele</a></li>
-            <li><a href="#" onclick="UI.openTab(this, '/templates/projects.html')">projekte</a></li>
-            <li><a href="#" onclick="UI.openTab(this, '/templates/contact.html')">kontakt</a></li>
+            <li class="dropdown active main-menu-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" onclick="UI.openTab(this, '/templates/home.html')" href="#">bildog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/goals.html')">Ziele</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/team.html')">Team</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/press.html')">Presse</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/statute.html')">Satzung/Jahresbericht</a></li>
+                </ul>
+            </li>
+            <li class="dropdown main-menu-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projekte</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/goals.html')">Knowledge Club</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/team.html')">MINT barrierefrei</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/press.html')">Ausbildung4me</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/statute.html')">bildogMagazin</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/goals.html')">bildogFM</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/team.html')">"Wer bist du? Mir ähnlich?"</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/press.html')">Black Youth</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/statute.html')">bildogBand</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/press.html')">Regenbogen</a></li>
+                    <li><a href="#" onclick="UI.openTab(this, '/templates/statute.html')">Afrika</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" onclick="UI.openTab(this, '/templates/contact.html')">Kontakt</a></li>
         </ul>
         <h3 class="text-muted">Bildog Logo</h3>
     </div>
