@@ -6,7 +6,6 @@ UI.openTab = (element, template) ->
   Helpers.loadTemplate template
 
 UI.loadContent = (filePath) ->
-  $("#" + section).html "" for section in ["oben", "links", "mitte", "rechts", "unten"]
   $.get filePath, (data) ->
     sections = Helpers.loadSections data
     for section, text of sections
