@@ -6014,11 +6014,15 @@ td.visible-print {
   top: 11px;
   left: -6px;
 }
+.image-jumbotron,
 #bildog-jumbotron {
   background-color: transparent;
-  background-image: url(/images/jumbotron-images/home1.jpg);
+  background-image: url(/images/jumbotron-images/Startseite.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+#bildog-jumbotron {
+  background-image: url(/images/jumbotron-images/Startseite.jpg);
 }
 body {
   background-image: url(/images/background.jpg);
