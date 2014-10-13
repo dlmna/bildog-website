@@ -21,4 +21,4 @@ bildog setzt sich daher für erfolgreiche und vor allem gleichberechtigte Bildun
 Bildung ist ein teures Gut – bildog hingegen ist kostenlos für die TeilnehmerInnen und genau das macht unser Angebot noch wertvoller!
 
 
-![Alt text](/images/bldg_bildog.png "Optional title")
+![Alt text](/content/bildog/bildog-test.png "Optional title")

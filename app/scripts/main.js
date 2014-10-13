@@ -21,6 +21,11 @@
     });
   };
 
+  UI.openDefaultTemplate = function(element, filePath) {
+    UI.openTab(element, "/templates/default.html");
+    return UI.loadContent(filePath);
+  };
+
   $(function() {
     return Helpers.loadTemplate("/templates/home.html");
   });

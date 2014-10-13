@@ -167,7 +167,7 @@ module.exports = function (grunt) {
       }
     },
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/{,*/}*.html', '<%= yeoman.dist %>/content/{,*/}*.txt'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         dirs: ['<%= yeoman.dist %>']
@@ -236,7 +236,7 @@ module.exports = function (grunt) {
             '.htaccess',
             'images/{,*/}*.{webp,gif}',
             'templates/{,*/}*.html',
-            'content/{,*/}*.txt',
+            'content/{,*/}*.{txt,png,jpg,jpeg,gif}',
             'scripts/markdown-browser-0.6.0-beta1/markdown.min.js'
           ]
         }]

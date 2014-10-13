@@ -12,5 +12,9 @@ UI.loadContent = (filePath) ->
       data = window.markdown.toHTML text
       $("#" + section).html data
 
+UI.openDefaultTemplate = (element, filePath) ->
+  UI.openTab element, "/templates/default.html"
+  UI.loadContent filePath
+
 $ ->
   Helpers.loadTemplate "/templates/home.html"
