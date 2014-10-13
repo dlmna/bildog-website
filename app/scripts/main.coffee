@@ -6,15 +6,12 @@ UI.openTab = (element, template) ->
   Helpers.loadTemplate template
 
 UI.loadContent = (filePath) ->
+  $("#" + section).html "" for section in ["oben", "links", "mitte", "rechts", "unten"]
   $.get filePath, (data) ->
     sections = Helpers.loadSections data
     for section, text of sections
       data = window.markdown.toHTML text
       $("#" + section).html data
-
-UI.openDefaultTemplate = (element, filePath) ->
-  UI.openTab element, "/templates/default.html"
-  UI.loadContent filePath
 
 $ ->
   Helpers.loadTemplate "/templates/home.html"

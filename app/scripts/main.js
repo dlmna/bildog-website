@@ -8,8 +8,14 @@
   };
 
   UI.loadContent = function(filePath) {
+    var section, _i, _len, _ref;
+    _ref = ["oben", "links", "mitte", "rechts", "unten"];
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      section = _ref[_i];
+      $("#" + section).html("");
+    }
     return $.get(filePath, function(data) {
-      var section, sections, text, _results;
+      var sections, text, _results;
       sections = Helpers.loadSections(data);
       _results = [];
       for (section in sections) {
@@ -19,11 +25,6 @@
       }
       return _results;
     });
-  };
-
-  UI.openDefaultTemplate = function(element, filePath) {
-    UI.openTab(element, "/templates/default.html");
-    return UI.loadContent(filePath);
   };
 
   $(function() {
